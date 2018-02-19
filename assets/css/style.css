@@ -11,6 +11,7 @@ section{
 
 .aboutMe{
   background-color: #F7FFF7;
+  margin-top: 1e
 }
 
 .tri{
@@ -22,7 +23,7 @@ section{
   position: relative;
   margin-top: 2em;
   margin-bottom: 2em;
-  margin-left: 9vh;
+  margin-left: -18vh;
 }
 
 .photo{
@@ -47,7 +48,7 @@ section{
   width: 73.3vh;
   z-index: 3;
   text-align: justify;
-
+  margin-top: 16vh;
 }
 
 .skill{
@@ -69,6 +70,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce2c7', end
 
 .work{
   background-color: #F7FFF7;
+}
+
+.workimg{
+  margin-top: 1em;
 }
 
 .btn{
