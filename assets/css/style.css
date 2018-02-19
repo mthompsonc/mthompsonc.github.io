@@ -1,0 +1,98 @@
+section{
+  font-family: 'Questrial', sans-serif;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.logo{
+  width: 6.5em;
+  margin-top: -9px;
+}
+
+.aboutMe{
+  background-color: #F7FFF7;
+}
+
+.tri{
+  width: 0;
+  height: 0;
+  border-left: 57vh solid #F77674;
+  border-top: 30vh solid transparent;
+  border-bottom: 30vh solid transparent;
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 9vh;
+}
+
+.photo{
+  width: 35vh;
+  border-radius: 50%;
+  z-index:2;
+  position: absolute;
+  border:1.7vh solid #6C969D;
+  bottom: -17vh;
+  right: -14vh;
+}
+
+.title{
+  font-size: 3.5em;
+  margin-bottom: 1em;
+}
+
+.personaldes{
+  color: #292F36;
+  font-size: 1.1em;
+  line-height: 1.6;
+  width: 73.3vh;
+  z-index: 3;
+  text-align: justify;
+
+}
+
+.skill{
+  background: rgba(124,226,199,0.74);
+background: -moz-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(124,226,199,0.74)), color-stop(100%, rgba(124,226,199,0.67)));
+background: -webkit-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
+background: -o-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
+background: -ms-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
+background: linear-gradient(to bottom, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce2c7', endColorstr='#7ce2c7', GradientType=0 );
+}
+
+.icon{
+  margin-top: 0.4em;
+  font-size: 5em;
+  color: #6C969D;
+}
+
+.work{
+  background-color: #F7FFF7;
+}
+
+.btn{
+  background-color: #F77674;
+  color: #FFFFFF;
+}
+
+.contact{
+  height: 18em;
+  background-color: #F77674;
+  color: #FFF;
+}
+
+.mediaicon{
+  border-radius: 50%;
+  padding: 0.4em;
+  border: 0.1em solid #F7FFF7;
+  color: #F7FFF7;
+  font-size: 2em;
+}
+
+footer{
+  height: 3em;
+  background-color: #292F36;
+  color: #FFF;
+  line-height: 3;
+}
