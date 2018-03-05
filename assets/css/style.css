@@ -23,14 +23,9 @@ body{
   bottom: 50px;
   right: 60px;
   text-align: center;
-  padding-right: 0.4em;
-  padding-left: 0.4em;
-}
-
-canvas {
-  display: block;
-  max-width: 90.25em!important;
-  max-height: 50%!important;
+  line-height: 0;
+  padding-right: 9px;
+  padding-left: 9px;
 }
 
 section{
