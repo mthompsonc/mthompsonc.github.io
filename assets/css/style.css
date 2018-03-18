@@ -31,6 +31,12 @@ body{
 section{
   padding-top: 2em;
   padding-bottom: 2em;
+  min-height: 100vh;
+  vertical-align: middle;
+}
+
+#contact{
+
 }
 
 .logo{
@@ -40,7 +46,6 @@ section{
 
 .aboutMe{
   background-color: #F7FFF7;
-  margin-top: 1e
 }
 
 .tri{
@@ -66,6 +71,7 @@ section{
 }
 
 .title{
+  padding-top: 1em;
   font-size: 3.5em;
   margin-bottom: 1em;
   text-align: center;
@@ -74,11 +80,11 @@ section{
 .personaldes{
   color: #292F36;
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 2;
   width: 80%;
   margin-left:10%;
   z-index: 3;
-  text-align: justify;
+  text-align: ;
 }
 
 .skill{
@@ -111,8 +117,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce2c7', end
   color: #FFFFFF;
 }
 
+.btns{
+  display: inline-block;
+  width: 49%;
+}
+
 .contact{
-  height: 18em;
+  padding-top: none!important;
+  min-height: 22em!important;
   background-color: #F77674;
   color: #FFF;
 }

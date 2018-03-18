@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Questrial" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/lib/magic.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -44,9 +45,9 @@
           </button>
         </div>
         <!-- First Section Home -->
-        <div class="img-responsive">
-          <canvas width="70%" height="80%"></canvas>
-        </div>
+        <section class="img-responsive">
+          <canvas width="100%" height="100%"></canvas>
+        </section>
         <!-- Second Section About Me -->
         <section class="aboutMe" id="aboutMe">
           <div class="container">
@@ -79,32 +80,32 @@
           </div>
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <p class="icon text-center">
+              <p class="icon text-center" data-toggle="tooltip" data-placement="top" title="Atom">
                 <i class="devicon-atom-original"></i>
               </p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <p class="icon text-center">
+              <p class="icon text-center" data-toggle="tooltip" data-placement="top" title="HTML5">
                 <i class="devicon-html5-plain-wordmark"></i>
               </p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <p class="icon text-center">
+              <p class="icon text-center" data-toggle="tooltip" data-placement="top" title="JavaScript">
                 <i class="devicon-javascript-plain"></i>
               </p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <p class="icon text-center">
+              <p class="icon text-center" data-toggle="tooltip" data-placement="top" title="JQuery">
                 <i class="devicon-jquery-plain-wordmark"></i>
               </p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <p class="icon text-center">
+              <p class="icon text-center" data-toggle="tooltip" data-placement="top" title="NodeJs">
                 <i class="devicon-nodejs-plain"></i>
               </p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-              <p class="icon text-center">
+              <p class="icon text-center" data-toggle="tooltip" data-placement="top" title="Sass">
                 <i class="devicon-sass-original"></i>
               </p>
             </div>
@@ -152,41 +153,55 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                 <div class="thumbnail">
-                  <img src="assets/img/noimg.png" class="img-responsive workimg">
+                  <img src="assets/img/Trello.png" class="img-responsive workimg">
                   <div class="caption">
-                    <h3 class="text-center">Work's Title</h3>
-                    <p>Work's description</p>
-                    <p><a href="#" class="btn center-block" role="button">Take me there!</a></p>
+                    <h3 class="text-center">Trello</h3>
+
+                    <p>This is a basic replica of Trello. Only Desktop View</p>
+                    <p class="text-center"><span class="label label-default">JavaScript</span> <span class="label label-default">Dom</span> </p>
+                    <p class="btns"><a href="https://github.com/mthompsonc/Trello" target="_blank" class="btn center-block" role="button">Code</a></p>
+                    <p class="btns"><a href="https://mthompsonc.github.io/Trello/" target="_blank" class="btn center-block" role="button">Demo</a></p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+              <div class="thumbnail">
+                <img src="assets/img/YouEat.png" class="img-responsive workimg">
+                <div class="caption">
+
+                    <h3 class="text-center">You Eat</h3>
+
+                    <p class="text-center">Social network to share food recipes. Only Desktop View.</p>
+                    <p class="text-center"><span class="label label-default">JavaScript</span> <span class="label label-default">JQuery</span> <span class="label label-default">Firebase</span> </p>
+                    <p class="btns"><a href="https://github.com/mthompsonc/youeat" target="_blank" class="btn center-block" role="button">Code</a></p>
+                    <p class="btns"><a href="https://mthompsonc.github.io/youeat" target="_blank" class="btn center-block" role="button">Demo</a></p>
                   </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
               <div class="thumbnail">
-                  <img src="assets/img/noimg.png" class="img-responsive workimg">
+                  <img src="assets/img/Easy.png" class="img-responsive workimg">
                   <div class="caption">
-                    <h3 class="text-center">Work's Title</h3>
-                    <p>Work's description</p>
-                    <p><a href="#" class="btn center-block" role="button">Take me there!</a></p>
+                    <h3 class="text-center">Easy-Vreco</h3>
+                    <p>Small project that uses the Google Maps's API. Responsive Web App.</p>
+                    
+                    <p class="text-center"><span class="label label-default">JavaScript</span> <span class="label label-default">Google Maps Api</span> <span class="label label-default">Materialize</span></p>
+
+                    <p class="btns"><a href="https://github.com/mthompsonc/easy-vreco" class="btn center-block" target="_blank" role="button">Code</a></p>
+                    <p class="btns"><a href="https://mthompsonc.github.io/easy-vreco/" target="_blank" class="btn center-block" role="button">Demo</a></p>
                   </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
               <div class="thumbnail">
-                  <img src="assets/img/noimg.png" class="img-responsive workimg">
+                  <img src="assets/img/GifSaver.png" class="img-responsive workimg">
                   <div class="caption">
-                    <h3 class="text-center">Work's Title</h3>
-                    <p>Work's description</p>
-                    <p><a href="#" class="btn center-block" role="button">Take me there!</a></p>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-              <div class="thumbnail">
-                  <img src="assets/img/noimg.png" class="img-responsive workimg">
-                  <div class="caption">
-                    <h3 class="text-center">Work's Title</h3>
-                    <p>Work's description</p>
-                    <p><a href="#" class="btn center-block" role="button">Take me there!</a></p>
+                    <h3 class="text-center">GifSaver</h3>
+                    <p>Single web-app made with Firebase and Giphy's API</p>
+                    <p class="text-center"><span class="label label-default">JQuery</span> <span class="label label-default"></span> <span class="label label-default">Bootstrap</span> <span class="label label-default">Giphy Api</span></p>
+                    <p class="btns"><a href="https://github.com/mthompsonc/gifSaver" class="btn center-block" target="_blank" role="button">Code</a></p>
+                    <p class="btns"><a href="https://mthompsonc.github.io/gifSaver/" target="_blank" class="btn center-block" role="button">Demo</a></p>
                   </div>
                 </div>
             </div>
@@ -214,7 +229,7 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                Made with <i class="fas fa-heart"></i> by MThompson
+                Made with <i class="fas fa-heart"></i> by MThompson | m.paz.thompson@gmail.com
               </div>
             </div>
           </div>

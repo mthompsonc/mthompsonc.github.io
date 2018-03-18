@@ -17,7 +17,7 @@ window.requestAnimFrame = (function() {
     DISTANCE_T    : 50,
     RADIUS        : 5,
     OPACITY       : 0.8,
-    SPEED_X       : 3,
+    SPEED_X       : 2,
     SPEED_Y       : 0.5,
     AMPLITUDE     : 10
   };
@@ -45,13 +45,13 @@ window.requestAnimFrame = (function() {
   
   var resize = function() {
     W = $(window).width();
-    H = $(window).height()-200;
-    ctx.canvas.width  = W;
+    H = $(window).height();
+    ctx.canvas.width = W;
     ctx.canvas.height = H;
-    bounds.top      = 80;
-    bounds.right    = W - 80;
-    bounds.bottom   = H - 80;
-    bounds.left     = 80;
+    bounds.top      = 50;
+    bounds.right    = W - 50;
+    bounds.bottom   = H - 50;
+    bounds.left     = 50;
   };
   
   var draw = function() {
@@ -167,66 +167,6 @@ window.requestAnimFrame = (function() {
   };
   
   window.onload = init;
-  
-  var GUI = new dat.GUI();
-  
-  GUI.add(settings, 'NUM_PARTICLES')
-    .min(2)
-    .max(200)
-    .step(1)
-    .name("# Particles")
-    .onFinishChange(function( num ){
-      var l = particles.length;
-      if ( num < l ) {
-        var diff = (l - num);
-        particles.splice( 1, diff );
-      }
-    
-      if ( num > l ) {
-        var diff = (num - l);
-        for (var i = 0; i < diff; i += 1) {
-          particles.push( new Particle() );
-        }
-      }
-    });
-  
-  GUI.add(settings, 'DISTANCE_T').min(20)
-    .max(90)
-    .step(10)
-    .name("Distance");
-  
-  GUI.add(settings, 'RADIUS')
-    .min(2)
-    .max(10)
-    .step(1)
-    .name("Radius")
-    .onFinishChange(function( value ) {
-      updateRadius( value );
-    });
-  
-  GUI.add(settings, 'SPEED_X')
-    .min(3)
-    .max(20)
-    .name("X speed")
-    .onFinishChange(function( value ) {
-      updateSpeed( value, false, "xspeed");
-    });
-  
-  GUI.add(settings, 'SPEED_Y')
-    .min(0)
-    .max(20)
-    .name("Y speed")
-    .onFinishChange(function( value ) {
-      updateSpeed( false, value, "yspeed");
-    });
-  
-  GUI.add(settings, 'AMPLITUDE')
-    .min(5)
-    .max(10)
-    .step(1)
-    .name("Amplitude");
-  
-  GUI.close();
   
 })();
 
