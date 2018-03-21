@@ -17,8 +17,8 @@ window.requestAnimFrame = (function() {
     DISTANCE_T    : 50,
     RADIUS        : 5,
     OPACITY       : 0.8,
-    SPEED_X       : 2,
-    SPEED_Y       : 0.5,
+    SPEED_X       : 1,
+    SPEED_Y       : 1,
     AMPLITUDE     : 10
   };
   
@@ -45,7 +45,7 @@ window.requestAnimFrame = (function() {
   
   var resize = function() {
     W = $(window).width();
-    H = $(window).height();
+    H = $(window).height()-1;
     ctx.canvas.width = W;
     ctx.canvas.height = H;
     bounds.top      = 50;
