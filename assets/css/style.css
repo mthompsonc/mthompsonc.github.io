@@ -1,163 +1,194 @@
+@import "compass/css3";
+
+/* Colors */
+.navcolor{
+  background: rgb(43,39,73);
+  background: linear-gradient(0deg, rgba(43,39,73,1) 0%, rgba(59,55,89,1) 100%);
+}
+
+.pink{
+  color:#CF8DA7;
+}
+.darkpink{
+  color:#AA5377;
+}
+
+.blue{
+  color:#084D6E;
+}
+
+/* Text definitions */
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+h1, h2, h3, h4{
+  font-family: 'ABeeZee', sans-serif;
+}
+
 body{
-  font-family: 'Questrial', sans-serif;
-  background-color: #F7FFF7;
+  background-color: #f7fff7;
+  overflow-x: hidden;
 }
 
-.navbar-default{
-  margin: 0;
-  position: fixed;
-  background-color: #fffffF;
-  z-index: 1000;
-  width: 100%;
-}
-
-#typing{
-  color: #FFFFFF;
-  z-index: 100;
-  position: absolute;
-  bottom: 7em;
-  left: 7em;
-  right: 7em;
-  text-shadow: 3px 2px 3px rgba(103, 150, 150, 0.97);
-}
-
-.up{
-  z-index: 100;
-  bottom: 50px;
-  right: 60px;
-  position: fixed;
-  display: none;
-  opacity: 0.7;
-  font-size:3em;
-  color: #182437;
-  border-radius: 100%;
-  padding:none!important;
-  background-color: none!important;
-  border:none;
-}
-
-section{
-  padding-top: 2em;
-  padding-bottom: 2em;
-  min-height: 100vh;
-  vertical-align: middle;
+.navbar-collapse {
+  flex-grow: 0!important;
 }
 
 .logo{
-  width: 6.5em;
-  margin-top: -9px;
+  width: 7em;
+  /* margin-top: -9px; */
 }
 
-.aboutMe{
-  background-color: #F7FFF7;
+
+/* Botones */
+#saberMas{
+  padding: 5px 18px;
+  border: 2px solid #FFF;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
 }
 
-.tri{
-  width: 0;
-  height: 0;
-  border-left: 57vh solid #F77674;
-  border-top: 30vh solid transparent;
-  border-bottom: 30vh solid transparent;
-  position: relative;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: -18vh;
+#saberMas:hover{
+  background: linear-gradient(180deg, #084D6E 0%, #0A608A 100%);
+  border-radius: 20px;
+  border: none;
 }
 
-.photo{
-  width: 35vh;
+#portada{
+  background-image: url(../img/ali-abdul-rahman-3kEkV4Aj0Lc-unsplash.jpg);
+  min-height: 58vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#tautor, #tautor a, #tautor a:hover{
+  right: 10%;
+  bottom: 5%;
+  color: #ffffff2b;
+  text-decoration: none;
+}
+
+.img-profile{
+  height: 20em;
+  overflow: hidden;
   border-radius: 50%;
-  z-index:2;
-  position: absolute;
-  border:1.7vh solid #6C969D;
-  bottom: -17vh;
-  right: -14vh;
+  width: 20em;
+  background-image: url(../img/Profile.JPG);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
-.title{
-  padding-top: 1em;
-  font-size: 3.5em;
-  margin-bottom: 1em;
-  text-align: center;
+.works{
+  width: 100%;
+  height: 33em;
+}
+.w0{
+  height: 28em !important;
+  overflow: hidden;}
+
+/* Media query mobile */
+@media only screen and (max-width: 768px) {
+  p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+  h1{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 32px;
+  }
+  h2{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20px;
+  }
+
+  #portada{
+    min-height: 58vh;
+  }
+  .img-profile{
+    height: 15em;
+    width:15em;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .textBox{
+    font-size: 16px;
+    top: 10%
+  }
+
+  #tautor{
+    text-align: center;
+    bottom:-1%
+  }
+
+  .works{
+    width: 100%;
+    height: auto;
+  }
+  
+  .w0{
+    height: 17em !important;
+    overflow: hidden;
+  }
+  
+}
+ /* Media query desktop  */
+@media only screen and (min-width: 1280px) {
+   #portada{
+    height: 68vh!important;
+    background-position-y: 92%;
+  }
+  .img-profile{
+    margin-top: 10%;
+  }
+
+  .textBox{
+    font-size: 25px;
+    position: relative;
+    top: 24%;
+  }
+
+  #tautor{
+    margin: 2em 0 0 auto;
+  }
+
+  #saberMas{
+    width: 119px;
+    height: 39px;
+    top: 12vh;
+    position: relative;
+  }
 }
 
-.personaldes{
-  color: #292F36;
-  font-size: 1.1em;
-  line-height: 2;
-  width: 80%;
-  margin-left:10%;
-  z-index: 3;
-  text-align: ;
-}
+@media only screen and (min-width: 1301px) {
+   #portada{
+    background-position-y: 92%;
+    height: 58vh !important;
+  }
 
-.skill{
-  background: rgba(124,226,199,0.74);
-background: -moz-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(124,226,199,0.74)), color-stop(100%, rgba(124,226,199,0.67)));
-background: -webkit-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
-background: -o-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
-background: -ms-linear-gradient(top, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
-background: linear-gradient(to bottom, rgba(124,226,199,0.74) 0%, rgba(124,226,199,0.67) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce2c7', endColorstr='#7ce2c7', GradientType=0 );
-}
+  #tautor{
+    margin: 5em 0 0 auto;
+  }
 
-.icon{
-  margin-top: 0.4em;
-  font-size: 5em;
-  color: #6C969D;
-}
+  .img-profile{
+    margin-top: 16%;
+  }
 
-.icon:hover{
-  margin-top: 0.4em;
-  font-size: 5em;
-  color: #79AAB1;
-  transform: scale(1.4);
-  transition: transform .2s;
-}
+  .textBox{
+    font-size: 25px;
+    position:relative;
+    top:24%;
+  }
 
-.work{
-  background-color: #F7FFF7;
-}
-
-.workimg{
-  margin-top: 1em;
-}
-
-.btn{
-  background-color: #F77674;
-  color: #FFFFFF;
-}
-
-.btns{
-  display: inline-block;
-  width: 49%;
-}
-
-.btns:hover{
-  transform: scale(1.04);
-  transition: transform .3s;
-}
-
-.contact{
-  padding-top: none!important;
-  min-height: 22em!important;
-  background-color: #F77674;
-  color: #FFF;
-}
-
-.mediaicon{
-  border-radius: 100%;
-  padding: 0.4em;
-  border: 0.1em solid #F7FFF7;
-  color: #F7FFF7;
-  font-size: 1.7em;
-  margin-bottom: 3em;
-}
-
-footer{
-  min-height: 3em;
-  background-color: #292F36;
-  color: #FFF;
-  line-height: 3;
+  #saberMas{
+    width: 119px;
+    height: 39px;
+    top: 12vh;
+    position: relative;
+  }
 }
