@@ -1,7 +1,7 @@
 # Portafolio Creativo.
 
 ## Presentación
-Hola, mi nombre es María Paz Thompson, tengo 26 años y soy diseñadora gráfica de profesión y además pertenezco a la 5ª generación de Laboratoria en Chile.
+Hola, mi nombre es María Paz Thompson, soy diseñadora gráfica de profesión, Front-End Developer (5ª generación de Laboratoria en Chile).
 
 ## Descripción de proyecto
 Los invito a seguir este repositorio, el cual contendrá mi portafolio como Front-End developer. Espero lograr plasmar todas mis ideas y que quede claro cuál es mi estilo y mis inspiraciones para seguir este camino.
