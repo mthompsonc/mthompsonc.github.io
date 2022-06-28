@@ -58,7 +58,7 @@ body{
 }
 
 #portada{
-  background-image: url(https://user-images.githubusercontent.com/32280744/176091618-970247b6-7f31-4f97-a3ba-38ab62531885.jpg);
+  background-image: url(/assets/img/ali-abdul-rahman-3kEkV4Aj0Lc-unsplash.jpg);
   min-height: 58vh;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -76,7 +76,7 @@ body{
   overflow: hidden;
   border-radius: 50%;
   width: 20em;
-  background-image: url(../img/profile.jpg);
+  background-image: url(https://user-images.githubusercontent.com/32280744/176091618-970247b6-7f31-4f97-a3ba-38ab62531885.jpg);
   background-size: cover;
   margin-left: auto;
   margin-right: auto; 
