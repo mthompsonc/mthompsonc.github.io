@@ -27,7 +27,7 @@ h1, h2, h3, h4{
 }
 
 body{
-  background-color: #f7fff7;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -90,6 +90,19 @@ body{
   height: 28em !important;
   overflow: hidden;}
 
+
+
+ footer, .icn{
+  color: #908CAE;
+  font-size: 1.8em;
+  text-decoration: none;
+ }
+
+ .icn:hover{
+  color: #FFF;
+ }
+ 
+ 
 /* Media query mobile */
 @media only screen and (max-width: 768px) {
   p{
@@ -130,12 +143,19 @@ body{
     width: 100%;
     height: auto;
   }
-  
+
   .w0{
     height: 17em !important;
     overflow: hidden;
   }
   
+  footer, .icn{
+    font-size: 1.6em;
+   }
+
+  footer small{
+    font-size: 14px;
+  }
 }
  /* Media query desktop  */
 @media only screen and (min-width: 1280px) {
