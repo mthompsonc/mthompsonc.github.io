@@ -26,10 +26,14 @@ h1, h2, h3, h4{
   font-family: 'ABeeZee', sans-serif;
 }
 
-body{
-  background-color: #ffffff;
+*{  
   overflow-x: hidden;
 }
+
+body{
+  background-color: #ffffff;
+}
+
 
 .navbar-collapse {
   flex-grow: 0!important;
